@@ -1,6 +1,5 @@
-FROM ubuntu
-RUN apt update -y
-RUN apt install nginx -y
-COPY index.html /usr/share/nginx/html/
-EXPOSE 80
+FROM centos:centos7
+RUN  yum install httpd -y
+COPY index.html /var/www/html/
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
