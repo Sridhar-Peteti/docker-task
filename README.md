@@ -1,9 +1,9 @@
 # docker-task
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                      INTEGRATING GTI AND DOCKER WITH JENKINS
+                                      INTEGRATING GIT AND DOCKER WITH JENKINS
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1- Setup jenkins in our instance
+ 1- Setup jenkins in our instance
 
  2- Install and restart docker on our instance
 
@@ -20,5 +20,5 @@
 
       --> 3RD stage is to build the container from the image
 
-  6- On jenkins you can see those images and running containers with the plugin 'DOCKER'
+ 6- On jenkins you can see those images and running containers with the plugin 'DOCKER'
 
