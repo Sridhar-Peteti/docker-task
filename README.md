@@ -20,5 +20,5 @@
 
       --> 3RD stage is to build the container from the image
 
- 6. On jenkins you can see those images and running containers with the plugin 'DOCKER'
+  6- On jenkins you can see those images and running containers with the plugin 'DOCKER'
 
