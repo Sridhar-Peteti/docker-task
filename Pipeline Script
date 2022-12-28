@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('getting src code') {
+            steps {
+                git 'https://github.com/Sridhar-Peteti/docker-task.git'
+            }
+        }
+        stage('Building image'){
+            steps{
+                sh 'docker build -t testimage .'
+            }
+        }
+        stage('Building container from image'){
+            steps{
+                sh 'docker run -dit --name cont1 -p 8088:80 testimage'
+            }
+        }
+    }
+}
